@@ -1,0 +1,113 @@
+.sponsers-container {
+    margin-top: 3rem;
+    box-sizing: border-box;
+}
+
+.sponsers-heading {
+    color: rgb(82, 79, 79);
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+.sponsers {
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 3rem;
+}
+
+.sequioa {
+    align-self: center;
+    height: auto;
+    width: 180px;
+    margin-right: 5rem;
+}
+
+.polychain {
+    align-self: center;
+    height: auto;
+    width: 150px;
+    margin-right: 5rem;
+}
+
+.consensys {
+    align-self: center;
+    height: auto;
+    width: 180px;
+}
+
+@media screen and (max-width: 1192px) {
+    .sequioa {
+        width: 150px;
+        margin-right: 4rem;
+    }
+    
+    .polychain {
+        width: 120px;
+        margin-right: 4rem;
+    }
+    
+    .consensys {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .sequioa {
+        width: 140px;
+        margin-right: 3rem;
+    }
+    
+    .polychain {
+        width: 120px;
+        margin-right: 3rem;
+    }
+    
+    .consensys {
+        align-self: center;
+        height: auto;
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .sponsers {
+        flex-direction: column;
+    }
+
+    .sequioa {
+        justify-self: center;
+        width: 200px;
+        margin-right: 0px;
+        margin-bottom: 2rem;
+    }
+    
+    .polychain {
+        justify-self: center;
+        width: 170px;
+        margin-right: 0px;
+        margin-bottom: 2rem;
+    }
+    
+    .consensys {
+        justify-self: center;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sequioa {
+        width: 180px;
+        margin-bottom: 1.8rem;
+    }
+    
+    .polychain {
+        width: 150px;
+        margin-bottom: 1.8rem;
+    }
+    
+    .consensys {
+        width: 180px;
+    }
+}

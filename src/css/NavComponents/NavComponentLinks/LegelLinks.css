@@ -1,0 +1,33 @@
+.legel {
+    background: white;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-sizing: border-box;
+    padding: 8px;
+    height: auto;
+    width: 120px;
+    position: fixed;
+    display: flex;
+    flex-flow: column;
+    top: 4rem;
+    overflow: hidden;
+    margin-left: 560px;
+}
+
+.legel > .element1, .element2, .element3 {
+    text-align: left;
+    font-weight: 500;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+}
+
+.legel > .element1:hover, .element2:hover, .element3:hover {
+    background-color: rgba(245, 245, 245, 0.514);
+}
+
+@media screen and (max-width:992px) {
+    .legel {
+        display: none;
+    }
+}

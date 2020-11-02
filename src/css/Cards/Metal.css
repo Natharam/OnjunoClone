@@ -1,0 +1,261 @@
+.metal-card {
+  margin: 1rem .8rem;
+  box-sizing: border-box;
+  box-shadow: 0 5px 40px #c5c5c5b4;
+  background: white;
+  width: 350px;
+}
+
+.juno-black-card {
+  margin-top: -5rem;
+  width: 250px;
+  height: 160px;
+}
+
+.metal-details {
+  box-sizing: border-box;
+  text-align: center;
+  background: rgba(238,253,226);
+  padding-bottom: 1rem;
+}
+
+.metal-details .heading {
+  box-sizing: border-box;
+  padding-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #808080;
+  letter-spacing: 4px;
+}
+
+.metal-details .interest {
+  box-sizing: border-box;
+  padding-bottom: 5px;
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #312eec;
+  line-height: 1.15;
+  letter-spacing: 0;
+  font-family: inherit;
+}
+
+.metal-details .text-super {
+  color: rgb(180, 180, 180);
+  font-size: 1.2rem;
+}
+
+.metal-details .cashback{
+  box-sizing: border-box;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.metal-details .cashback span{
+  margin-right: 6px;
+  padding: 2px 8px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background: #00a86b;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.metal-signup {
+  box-sizing: border-box;
+  padding: 0 1.8rem 1rem 1.8rem;
+  border-bottom: .5px solid rgba(219, 219, 219, 0.7);
+}
+
+.metal-signup .spots {
+  height: 60px;
+  box-sizing: border-box;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.metal-signup .spots .spot-avail {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(138, 138, 138, .8);
+}
+
+.metal-signup .spots .spot-avail span {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #068758;
+}
+
+.metal-signup .spots .spot-left {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(138, 138, 138, .8);
+}
+
+.metal-signup .line {
+  height: 9px;
+  width: 100%;
+  background: rgb(218, 218, 218);
+  border-radius: 5px;
+}
+
+.metal-signup .line p {
+  height: 9px;
+  width: 90%;
+  background: #09be7c;
+  border-radius: 5px;
+}
+
+.metal-signup .signup {
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+  width: 100%;
+  height: 50px;
+  margin-top: 1.2rem;
+  border-radius: 10px;
+  background: #4643ee;
+  cursor: pointer;
+}
+
+.metal-signup .signup:hover {
+  background: blue;
+}
+
+.metal-banifits {
+  box-sizing: border-box;
+  padding: .5rem 1.8rem;
+  height: 310px;
+}
+
+.metal-banifits .heading {
+  margin-top: 1rem;
+  color: rgb(185, 185, 185);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-align: left;
+}
+
+.metal-banifits .includes {
+  margin-top: 1rem;
+  list-style-type: none;
+}
+
+.metal-banifits .includes li {
+  text-align: left;
+  line-height: 1.8;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(53, 53, 53);
+}
+
+.metal-banifits .includes li span svg {
+  height: 0.7rem;
+  padding-right: 10px;
+}
+
+.metal-banifits .includes li .text-super {
+  font-size: 13px;
+}
+
+.metal-banifits p {
+  text-align: left;
+  margin: 1rem 0;
+  font-size: 14px;
+  color: gray;
+}
+
+.metal-availability {
+  box-sizing: border-box;
+  padding: 1.5rem 1.8rem;
+  background: #c2f6e3;
+  display: flex;
+}
+
+.metal-availability .icon span svg {
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding-right: 10px;
+  height: 25px;
+  width: auto;
+}
+
+.metal-membership {
+  box-sizing: border-box;
+  height: 80px;
+}
+
+.metal-membership .membership-fee {
+  text-align: left;
+  line-height: 1.8rem;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: rgb(22, 22, 22);
+  text-decoration: line-through;
+}
+
+.metal-membership .free {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #068758;
+}
+
+.metal-membership .saving {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #068758;
+}
+
+@media screen and (max-width: 1192px) {
+  .metal-card {
+    width: 280px;
+  }
+
+  .metal-banifits {
+    height: 380px;
+  }
+
+  .juno-black-card {
+    height: 130px;
+    width: 210px;
+  }
+
+  .metal-membership {
+    height: 90px;
+  }
+
+  .metal-membership .free {
+    font-size: 1.1rem;
+  }
+
+  .metal-membership .saving {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  .metal-card {
+    width: 475px;
+  }
+
+  .juno-black-card {
+    height: 230px;
+    width: 380px;
+  }
+
+  .metal-banifits {
+    height: 300px;
+  }
+
+  .metal-membership {
+    height: 80px;
+  }
+}

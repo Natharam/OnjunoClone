@@ -1,0 +1,28 @@
+.sidebar-company-links {
+    background: rgba(250, 250, 250, 0.466);
+    box-sizing: border-box;
+    padding: 0 16px;
+    height: auto;
+}
+
+.sidebar-company-links li {
+    box-sizing: border-box;
+    list-style: none;
+    text-align: left;
+    font-weight: 500;
+    display: block;
+    padding: 0 12px;
+    color: rgb(121, 121, 121);
+}
+
+.sidebar-company-links li a {
+    text-decoration: none;
+}
+
+.sidebar-company-links li a:hover {
+    color: black;
+}
+
+.sidebar-company-links > li:hover {
+    background: rgba(250, 250, 250, 0.972);
+}

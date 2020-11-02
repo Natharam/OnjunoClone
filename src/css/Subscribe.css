@@ -1,0 +1,248 @@
+.subscribe {
+  margin-top: 7rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-content {
+  margin-top: 2rem;
+  height: auto;
+  width: 60%;
+}
+
+.subscribe-heading {
+  text-align: left;
+  --text-opacity: 1;
+  font-size: 3.7rem;
+  font-weight: bolder;
+  color: rgba(3, 2, 0, var(--text-opacity));
+  font-family: serif;
+}
+
+.subscribe-para {
+  text-align: left;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: rgb(131, 126, 126);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.input-fields {
+  display: flex;
+  width: 82%;
+  line-height: 1.77;
+  margin-top: 2.5rem;
+  justify-content: space-evenly;
+  border: 1px solid rgb(203, 203, 207);
+  border-radius: 15px;
+  padding: 15px 5px;
+}
+
+.email-input {
+  width: 60%;
+  border: none;
+  outline: none;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+
+.join-now {
+  outline: none;
+  border: none;
+  color: white;
+  height: 3rem;
+  width: 8rem;
+  font-weight: 700;
+  padding: 4px;
+  border-radius: 10px;
+  background: rgb(76, 76, 230);
+  cursor: pointer;
+}
+
+.join-now:hover {
+  background: rgb(45, 45, 221);
+}
+
+.spots {
+  margin-top: 1.5rem;
+  margin-left: 0.6rem;
+  display: flex;
+  align-self: center;
+}
+
+.flag {
+  height: 18px;
+  width: 30px;
+}
+
+.spot {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(141, 137, 137);
+  font-family: sans-serif;
+  margin-left: 1rem;
+}
+
+.services {
+  display: flex;
+  margin-top: 3rem;
+  align-items: center;
+}
+
+.fdic {
+  height: 50px;
+  width: 60px;
+}
+
+.banking {
+  text-align: left;
+  margin-left: 1.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: rgb(173, 166, 166);
+}
+
+.juno-card {
+  width: auto;
+  height: 635px;
+}
+
+/* for Desktop */
+@media screen and (max-width: 1191px) {
+  .subscribe {
+    margin-top: 2rem;
+  }
+
+  .subscribe-content {
+    margin-top: 5rem;
+    width: 66.67%;
+  }
+
+  .subscribe-heading {
+    font-size: 3.2rem;
+  }
+
+  .subscribe-para {
+    font-size: 1.2rem;
+  }
+
+  .input-fields {
+    margin-top: 2.2rem;
+    width: 90%;
+    padding: 15px 5px;
+  }
+
+  .join-now {
+    height: 3rem;
+    width: 6.5rem;
+  }
+
+  .juno-card {
+    margin-top: 6.5rem;
+    width: auto;
+    height: 580px;
+  }
+}
+
+/* for Large Tablet */
+@media screen and (max-width: 992px) {
+  .subscribe-heading {
+    font-size: 2.6rem;
+  }
+
+  .subscribe-para {
+    font-size: 1rem;
+  }
+
+  .input-fields {
+    padding: 15px 0;
+  }
+
+  .email-input {
+    font-size: 1rem;
+  }
+
+  .join-now {
+    width: 4.5rem;
+  }
+
+  .services {
+    margin-top: 2rem;
+  }
+
+  .juno-card {
+    height: 360px;
+  }
+}
+
+/* for Large Mobile */
+@media screen and (max-width: 720px) {
+  .subscribe {
+    flex-direction: column;
+    margin: 0;
+    padding: 5%;
+  }
+
+  .subscribe-content {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    width: 90%;
+  }
+
+  .subscribe-heading {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .subscribe-para {
+    text-align: center;
+  }
+
+  .subscribe-para > br{content:' ';}
+
+  .input-fields {
+    padding: 15px 0;
+    width: 100%;
+  }
+
+  .email-input {
+    font-size: 1rem;
+  }
+
+  .join-now {
+    width: 7rem;
+  }
+
+  .juno-card {
+    height: 500px;
+  }
+}
+
+/* for Mobile */
+@media screen and (max-width: 500px) {
+  .subscribe-heading {
+    font-size: 2rem;
+  }
+
+  .subscribe-content {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .subscribe-para {
+    font-size: 1.2rem;
+  }
+
+  .email-input {
+    font-size: 0.89rem
+  }
+
+  .join-now {
+    width: 5rem;
+  }
+}

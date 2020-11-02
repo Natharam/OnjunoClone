@@ -1,0 +1,157 @@
+.nav-container {
+  box-sizing: border-box;
+  font-family: "segoe ui";
+  top: 0;
+  height: 4.5rem;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 1px 5px rgb(210, 210, 211);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.nav-logo {
+  margin-left: 4rem;
+}
+
+.app-logo {
+  height: 2.5rem;
+  width: auto;
+  display: inline-block;
+  justify-self: flex-start;
+  align-self: center;
+}
+
+.nav-btn {
+  display: none;
+}
+
+.home-link {
+  margin-left: 3rem;
+  padding: 14px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.home-link > a {
+  text-decoration: none;
+  font-weight: 500;
+  color: rgb(247, 80, 197);
+  cursor: pointer;
+}
+
+.nav {
+  margin-left: .5rem;
+  display: flex;
+  box-sizing: border-box;
+  padding: 14px 10px;
+}
+
+#nav-check {
+  display: none;
+}
+
+.register {
+  margin-left: auto;
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.login-btn {
+  font-weight: 500;
+  color: black;
+  height: 40px;
+  width: 105px;
+  border: 2px solid rgb(40, 20, 224);
+  border-radius: 10px;
+  cursor: pointer;
+  vertical-align:middle
+}
+
+.signup-btn {
+  font-weight: 500;
+  margin-left: 1rem;
+  height: 40px;
+  width: 105px;
+  border: 2px solid rgb(40, 20, 224);
+  background-color: rgb(89, 71, 248);
+  background-color: rgba(70,67,238, .5);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.login-btn:hover, .signup-btn:hover {
+  color: white;
+  background-color: blue;
+}
+
+@media (max-width: 992px) {
+  .nav-btn {
+    display: block;
+    position: inherit;
+    right: 0px;
+    margin-right: 20px;
+  }
+
+  .nav-btn > label {
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 14px;
+    cursor: pointer;
+  }
+  
+  .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(226, 226, 226, 0.3);
+  }
+
+  .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid rgb(182, 182, 182);
+  }
+
+  .close {
+    height: 55px;
+    width: 50px;
+    align-self: center;
+    display: inline-block;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .close:hover {
+    background-color: rgba(226, 226, 226, 0.3);
+  }
+
+  .nav, .home-link, .register {
+    display: none;
+  }
+
+  .nav > a {
+    display: block;
+    width: 100%;
+  }
+
+  .nav > #nav-check:not(:checked) ~ .nav {
+    height: 0px;
+  }
+
+  .nav > #nav-check:checked ~ .nav {
+    height: calc(100vh - 4.5rem);
+    overflow-y: auto;
+  }
+
+  .register > .signup-btn , .login-btn {
+    display: block;
+    text-align: left;
+  }
+}

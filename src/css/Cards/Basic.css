@@ -1,0 +1,228 @@
+.Basic-card {
+  margin: 1rem 0.8rem;
+  box-sizing: border-box;
+  box-shadow: 0 5px 40px #c5c5c5b4;
+  background: white;
+  width: 350px;
+}
+
+.juno-basic-card {
+  margin-top: -5rem;
+  width: 250px;
+  height: 160px;
+}
+
+.Basic-details {
+  box-sizing: border-box;
+  text-align: center;
+  background: rgba(238, 253, 226);
+  padding-bottom: 1rem;
+}
+
+.Basic-details .heading {
+  box-sizing: border-box;
+  padding-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #808080;
+  letter-spacing: 4px;
+}
+
+.Basic-details .interest {
+  box-sizing: border-box;
+  padding-bottom: 5px;
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: black;
+  line-height: 1.15;
+  letter-spacing: 0;
+  font-family: inherit;
+}
+
+.Basic-details .text-super {
+  color: rgb(180, 180, 180);
+  font-size: 1.2rem;
+}
+
+.Basic-details .cashback {
+  box-sizing: border-box;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.Basic-details .cashback span {
+  margin-right: 6px;
+  padding: 2px 8px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background: #00a86b;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.Basic-signup {
+  box-sizing: border-box;
+  padding: 0 1.8rem 1rem 1.8rem;
+  border-bottom: 0.5px solid rgba(219, 219, 219, 0.7);
+}
+
+.Basic-signup .spots {
+  height: 60px;
+  box-sizing: border-box;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Basic-signup .spots .spot-avail {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(138, 138, 138, 0.8);
+}
+
+.Basic-signup .spots .spot-left {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(138, 138, 138, 0.8);
+}
+
+.Basic-signup .line {
+  height: 9px;
+  width: 100%;
+  background: rgb(230, 230, 230, 0.7);
+  border-radius: 5px;
+}
+
+.Basic-signup .signup {
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+  width: 100%;
+  height: 50px;
+  margin-top: 1.2rem;
+  border-radius: 10px;
+  background: #b2b2b2;
+}
+
+.Basic-banifits {
+  box-sizing: border-box;
+  padding: 0.5rem 1.8rem;
+  height: 310px;
+}
+
+.Basic-banifits .heading {
+  margin-top: 1rem;
+  color: rgb(185, 185, 185);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-align: left;
+}
+
+.Basic-banifits .includes {
+  margin-top: 1rem;
+  list-style-type: none;
+}
+
+.Basic-banifits .includes li {
+  text-align: left;
+  line-height: 1.8;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(53, 53, 53);
+}
+
+.Basic-banifits .includes li span svg {
+  height: 0.7rem;
+  padding-right: 10px;
+}
+
+.Basic-banifits .includes li .text-super {
+  font-size: 13px;
+}
+
+.Basic-banifits p {
+  text-align: left;
+  margin: 1rem 0;
+  font-size: 14px;
+  color: gray;
+}
+
+.Basic-availability {
+  box-sizing: border-box;
+  padding: 1.5rem 1.8rem;
+  background: #f7f7fb;
+  display: flex;
+}
+
+.Basic-availability .icon span svg {
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding-right: 10px;
+  height: 25px;
+  width: auto;
+}
+
+.Basic-membership {
+  box-sizing: border-box;
+  height: 80px;
+}
+
+.Basic-membership .membership-fee {
+  text-align: left;
+  line-height: 1.8rem;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #a8a8a8;
+  text-decoration: line-through;
+}
+
+.Basic-membership .saving {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #a8a8a8;
+}
+
+@media screen and (max-width: 1192px) {
+  .Basic-card {
+    width: 280px;
+  }
+
+  .Basic-banifits {
+    height: 380px;
+  }
+
+  .juno-basic-card {
+    height: 130px;
+    width: 210px;
+  }
+
+  .Basic-membership {
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Basic-card {
+    width: 475px;
+  }
+
+  .juno-basic-card {
+    height: 230px;
+    width: 380px;
+  }
+
+  .Basic-banifits {
+    height: 300px;
+  }
+
+  .Basic-membership {
+    height: 80px;
+  }
+}

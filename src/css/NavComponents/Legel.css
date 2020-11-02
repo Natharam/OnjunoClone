@@ -1,0 +1,21 @@
+.company-links > p,
+.learn-links > p,
+.legel-links > p {
+  box-sizing: border-box;
+  padding: 14px 8px;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0 1rem;
+  cursor: pointer;
+  color: rgb(121, 121, 121);
+}
+
+.company-links > p:hover,
+.learn-links > p:hover,
+.legel-links > p:hover {
+  color: black;
+}
+
+.company-svg, .learn-svg ,.legel-svg {
+  height: 1rem;
+}
