@@ -1,11 +1,18 @@
-import React, {useRef} from "react";
+import React, {useEffect} from "react";
 import '../../../css/NavComponents/NavComponentLinks/LegelLinks.css';
 
-const Legel = () => {
-  let companyRef = useRef();
+const Legel = (props) => {
+  useEffect(() => {
+    document.addEventListener("keydown", props.handleHideComponent, true);
+    document.addEventListener("click", props.handleClickOutside, true);
+    return () => {
+      document.removeEventListener("keydown", props.handleHideComponent, true);
+      document.removeEventListener("click", props.handleClickOutside, true);
+    };
+  }, [props.legel]);
   
   return (
-    <div ref={companyRef} className="legel">
+    <div ref={props.myRef} className="legel">
       <a 
         className="element1"
         href="https://github.com/Natharam" 

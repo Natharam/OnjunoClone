@@ -4,7 +4,7 @@ const useComponentVisible = (initialIsVisible) => {
     const [isComponentVisible, setIsComponentVisible] = useState(initialIsVisible);
     const ref = useRef(null);
 
-    const handleHideDropdown = (event) => {
+    const handleHideComponent = (event) => {
         if (event.key === 'Escape') {
             setIsComponentVisible(false);
         }
@@ -17,10 +17,10 @@ const useComponentVisible = (initialIsVisible) => {
     };
 
     useEffect(() => {
-        document.addEventListener('keydown', handleHideDropdown, true);
+        document.addEventListener('keydown', handleHideComponent, true);
         document.addEventListener('click', handleClickOutside, true);
         return () => {
-            document.removeEventListener('keydown', handleHideDropdown, true);
+            document.removeEventListener('keydown', handleHideComponent, true);
             document.removeEventListener('click', handleClickOutside, true);
         };
     });

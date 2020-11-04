@@ -1,9 +1,17 @@
-import React from "react";
+import React, {useEffect} from "react";
 import '../../../css/NavComponents/NavComponentLinks/LearnLinks.css';
 
-const Learn = () => {
+const Learn = (props) => {
+  useEffect(() => {
+    document.addEventListener("keydown", props.handleHideComponent, true);
+    document.addEventListener("click", props.handleClickOutside, true);
+    return () => {
+      document.removeEventListener("keydown", props.handleHideComponent, true);
+      document.removeEventListener("click", props.handleClickOutside, true);
+    };
+  }, [props.learn]);
   return (
-    <div  className="learn">
+    <div ref={props.myRef}  className="learn">
       <a 
         className="element1"
         href="https://github.com/Natharam" 

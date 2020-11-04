@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../../css/NavComponents/SideBar/SideBar.css";
 import CompanyLinks from "./SidebarComponent/ComapnyLinks";
 import LearnLinks from "./SidebarComponent/LearnLinks";
 import LegelLinks from "./SidebarComponent/LegelLinks";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
   const [company, setCompany] = useState(false);
   const [learn, setLearn] = useState(false);
   const [legel, setLegel] = useState(false);
@@ -21,8 +21,15 @@ const Sidebar = () => {
     setLegel(!legel);
   };
 
+  useEffect(() => {
+    document.addEventListener("keydown", props.handleHideComponent, true);
+    return () => {
+      document.removeEventListener("keydown", props.handleHideComponent, true);
+    };
+  }, [props.sideBar]);
+
   return (
-    <div  className="sidebar-container">
+    <div ref={props.myRef}  className="sidebar-container">
       <div className="sidebar-links">
         <h3 className="sidebar-home-link">Home</h3>
         <ul className="other-links">

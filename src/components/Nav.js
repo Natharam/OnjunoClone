@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/NavComponents/Nav.css";
 import Company from "../components/NavComponent/Company";
 import Learn from "../components/NavComponent/Learn";
 import Legel from "../components/NavComponent/Legel";
 
 const Nav = (props) => {
+  const [navbar, setNavabr] = useState(false);
+  const addShadow = () => {
+    if (window.scrollY >= 64) {
+      setNavabr(true);
+    } else {
+      setNavabr(false);
+    }
+  };
+  window.addEventListener("scroll", addShadow);
   return (
-    <div className="nav-container">
+    <div className={navbar ? 'nav-container active' : 'nav-container'}>
       <input type="checkbox" id="nav-check" />
       <div className="nav-logo">
         <img
