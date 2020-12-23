@@ -6,6 +6,8 @@ This is cloned web app of onjuno website. In this appliaction I focus on only de
 
 ## Tool and Technology
 
+ReactJs, Js, HTML, CSS, JSX, VS Code.
+
 To run this project, In the project directory, you can run:
 
 'yarn start' to start(run) this project.
