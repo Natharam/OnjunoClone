@@ -1,5 +1,11 @@
 This app is Live at https://onjuno-clone.netlify.app/
 
-In the project directory, you can run:
+## Discription
+
+This is cloned web app of onjuno website. In this appliaction I focus on only designing and responsive web app. So there will be no functionality.
+
+## Tool and Technology
+
+To run this project, In the project directory, you can run:
 
 'yarn start' to start(run) this project.
